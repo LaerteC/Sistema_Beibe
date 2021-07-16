@@ -7,7 +7,7 @@ package dao;
 
 import dao.implementacao.FuncionarioDaoImpl;
 import dao.implementacao.ProdutoDaoImpl;
-import dao.implementacao.UsuarioDaoImpl;
+import dao.implementacao.ClienteDaoImpl;
 
 /**
  *
@@ -16,9 +16,9 @@ import dao.implementacao.UsuarioDaoImpl;
 public class DaoFactory {
     
     
-    public static UsuarioDao criarUsuarioDao(){
+    public static ClienteDao criarClienteDao(){
         
-        return new UsuarioDaoImpl();
+        return new ClienteDaoImpl();
     }
     public static ProdutoDao criarProdutoDao(){
         

@@ -17,7 +17,7 @@ public class ProdutoDaoImpl implements ProdutoDao{
 
     @Override
     public void inserirAtualizar(Produto x) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     }
 
     @Override

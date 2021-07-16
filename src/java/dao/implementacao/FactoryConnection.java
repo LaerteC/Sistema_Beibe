@@ -15,21 +15,23 @@ import java.sql.SQLException;
  */
 public class FactoryConnection {
     
-    private static final String URL="jdbc:mysql://localhost/beibe?userTimezone=true&serverTimezone=UTC&useSSL=false";
+    
+   private static final String URL="jdbc:mysql://localhost/sistemaUsuario?userTimezone=true&serverTimezone=UTC&useSSL=false";
     private static final String USER="root";
     private static final String SENHA="210394";
+    private static final String DRIVER = "com.mysql.jdbc.Driver";
     
     public static Connection getConnection(){
         
         try{
             
+             Class.forName(DRIVER);
             return DriverManager.getConnection(URL,USER,SENHA);
             
-        }catch(SQLException ex){
+        }catch(ClassNotFoundException | SQLException ex){
             
             throw new RuntimeException(ex);
             
         }
     }
-    
 }

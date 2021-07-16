@@ -6,13 +6,12 @@
 package dominio;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  *
  * @author laert
  */
-public class Funcionario extends Usuario implements Serializable {
+public class Funcionario extends Cliente implements Serializable {
 
     private String tipo;
 
@@ -20,12 +19,11 @@ public class Funcionario extends Usuario implements Serializable {
 
     }
 
-    public Funcionario(String id, String cpf, String nome, String senha, String email, Date data, String rua, String telefone, int numero, String cep, Cidade cidade, String tipo) {
-        super(id, cpf, nome, senha, email, data, rua, telefone, numero, cep, cidade);
-
+    public Funcionario(String tipo) {
         this.tipo = tipo;
     }
 
+    
     public String getTipo() {
         return tipo;
     }
