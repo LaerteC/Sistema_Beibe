@@ -6,11 +6,11 @@
 
 		<li><a href="<%=request.getContextPath()%>/cliente/listar">Cadastro
 				de Clientes</a></li>
-		<li><a href="<%=request.getContextPath()%>/filme/pesquisar">Pesquisar
-				Filmes</a></li>
+		<li><a href="<%=request.getContextPath()%>/funcionario/pesquisar">Pesquisar
+				Clientes</a></li>
 
-		<li><a href="<%=request.getContextPath()%>/participacao/filmes">Inserir
-				Participações</a></li>
+		<li><a href="<%=request.getContextPath()%>/produtos/inserir">Inserir
+				Produtos</a></li>
 	</ul>
 
 	</div>

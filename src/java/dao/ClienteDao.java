@@ -27,5 +27,7 @@ public interface ClienteDao {
  public boolean excluir(Cliente cliente);
  
  public Cliente buscarCliente(Object dado, String sql);
+ 
+ public List<Cliente> bucarPorNome(String trecho);
     
 }

@@ -109,6 +109,11 @@ public class ClienteServico {
         
        return dao.listar();
     }
+    
+    public List<Cliente> buscarPorNome(String trecho){
+        
+        return dao.bucarPorNome(trecho);
+    }
 
    
 
